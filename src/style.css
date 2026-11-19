@@ -48,4 +48,20 @@ button {
 }
 button:hover { background: #1e46a5; }
 button:focus-visible { outline: 3px solid #17243b; outline-offset: 4px; }
-.counter { margin-bottom: 0; }
+form { display: flex; flex-direction: column; gap: 8px; }
+label { font-weight: 600; margin-top: 12px; }
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  font: inherit;
+  color: #17243b;
+  background: #fff;
+  border: 1px solid #9ca9bc;
+  border-radius: 8px;
+}
+input:focus-visible { outline: 2px solid #2759cf; outline-offset: 2px; }
+.hint { font-size: 14px; color: #536176; }
+form button { margin-top: 20px; }
+.error { color: #a91d2d; margin-bottom: 0; }
+.success { color: #17633b; background: #e9f7ee; padding: 16px; border-radius: 8px; margin-bottom: 0; }
